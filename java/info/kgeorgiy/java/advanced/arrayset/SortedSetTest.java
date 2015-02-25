@@ -279,7 +279,7 @@ public class SortedSetTest {
             new NamedComparator("Reverse order") {
                 @Override
                 public int compare(final Integer i1, final Integer i2) {
-                    return Integer.compare(i1, i2);
+                    return Integer.compare(i1, i2) * -1;
                 }
             },
             new NamedComparator("Div 100") {
